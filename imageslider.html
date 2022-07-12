@@ -8,15 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
     <style>
-    .main-container{
-    
+    .slide-container{
+     width: 800px;
+     overflow: hidden;
+      margin: auto;
+     
     }
+    
     .image-container{
     display: flex;
-    width: 800px;
-    overflow: hidden;
+    width: 2400px;
+   
     border: 23px solid blueviolet;
-    margin: auto;
+   
+    position:relative;
+    
+     -webkit-transition: left 2s;
+     -moz-transition: left 2s;
+     -o-transition: left 2s;
+          
+    transition:left 2s;
     
     
     }
@@ -37,22 +48,67 @@
     float: left;
     width: 800px;
     }
+    #slider1:target ~ .image-container
+    {
+    left:0px;
+    
+    }
+    #slider2:target ~ .image-container
+    {
+    left: -800px;
+    
+    }
+    #slider3:target ~ .image-container
+    {
+    left: -1600px;
+    
+    }
+     .slider-change
+        {
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            background-color: brown;
+        }
+        .button-holder{
+         position: relative;
+            top: -20px;
+            left:370px;
+        
+        
+        }
   
   
     </style> 
 </head>
 <body>
+<div class="slide-container">
+<span id="slider1"></span>
+<span id="slider2"></span>
+<span id="slider3"></span>
 
 <div class="image-container">
-<div class="slide1">
+
+
 <img src="ertugrul.jpeg" style="width: 800;">
-</div>
-<div class="slide2">
+
+
 <img src="turgut.jpg" style="width: 800;">
-</div>
-<div class="slide3">
+
+
 <img src="bamsi.jpg" style="width: 800;">
+
+
+
 </div>
+
+
+  <div class="button-holder">
+            <a href="#slider1" class="slider-change"></a>
+            <a href="#slider2" class="slider-change"></a>
+            <a href="#slider3" class="slider-change"></a>
+        </div>
 
 
 
