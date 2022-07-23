@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <title>Form Validation Client side</title>
+    <style>
+    
+    
+    
+    .leftarrow{
+     width:20px;
+     background-color: white;
+     padding: 10;
+     position: relative;
+     top: -300;
+     left: 20;
+     transform:rotate(180deg);
+  
+    }
+    
+    
+     .leftarrow:hover{
+  background-color: wheat; 
+  }
+  
+  
+  .rightarrow{
+  width:20px;
+  background-color: white;
+  padding: 10;
+  position: relative;
+  top: -340;
+  left: 739;
+   
+
+  }
+  
+  .rightarrow:hover{
+  background-color: wheat;
+  
+  
+  }
+  
+  .visible-window{
+  width:800px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin:auto;
+  
+  }
+  .image-container{
+  display:flex;
+  position:relative;
+  }
+  #slider1:target ~.image-container
+  {
+  left:0px;
+  }
+  #slider2:target ~.image-container
+  {
+   left:-800px;
+  }
+  #slider3:target ~.image-container
+  {
+   left:-1600px;
+  }
+  #slider4:target ~.image-container
+  {
+   left:-2400px;
+  }
+  #slider5:target ~.image-container
+  {
+   left:-3200px;
+  }
+  #slider6:target ~.image-container
+  {
+   left:-4000px;
+  }
+  
+  
+  
+  
+    </style> 
+</head>
+<body>
+<div class="visible-window">
+<span id="slider1"></span>
+<span id="slider2"></span>
+<span id="slider3"></span>
+<span id="slider4"></span>
+<span id="slider5"></span>
+<span id="slider6"></span>
+
+<div class="image-container">
+<div class="image">
+<img src="image1.webp" >
+</div>
+<div class="image">
+<img src="image2.webp" >
+</div>
+<div class="image">
+<img src="image3.webp" >
+</div>
+<div class="image">
+<img src="image4.webp" >
+</div>
+<div class="image">
+<img src="image5.webp" >
+</div>
+<div class="image">
+<img src="image6.webp" >
+</div>
+
+</div>
+<div class="leftarrow">
+<a href="#slider1">
+<svg xmlns="http://www.w3.org/2000/svg" class="a8e3563c _83b7a232" viewBox="0 0 32 32"><path d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z"></path></svg>
+
+</a>
+</div>
+
+<div class="rightarrow">
+<a href="#slider2">
+<svg xmlns="http://www.w3.org/2000/svg" class="a8e3563c _83b7a232" viewBox="0 0 32 32"><path d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z"></path></svg>
+</a>
+
+</div>
+
+
+<div class="button-holder">
+<a href="">
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
